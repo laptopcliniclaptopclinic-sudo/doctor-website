@@ -607,3 +607,74 @@ a {
     text-align: center;
   }
 }
+/* HAMBURGER MENU */
+
+.navbar {
+  position: relative;
+}
+
+.menu-toggle {
+  display: block;
+  border: none;
+  background: transparent;
+  font-size: 28px;
+  cursor: pointer;
+  color: #087f8c;
+  margin-left: auto;
+}
+
+/* MENU DROPDOWN */
+
+.nav-links {
+  display: none;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  left: auto;
+  width: 220px;
+  background: white;
+  flex-direction: column;
+  gap: 0;
+  padding: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.nav-links.active {
+  display: flex;
+}
+
+.nav-links a {
+  padding: 14px 20px;
+  width: 100%;
+  text-align: left;
+}
+
+.nav-button {
+  display: none;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .navbar {
+    min-height: 65px;
+    padding: 12px 5%;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .menu-toggle {
+    font-size: 25px;
+  }
+
+  .nav-links {
+    top: 62px;
+    right: 5%;
+    width: 200px;
+  }
+}
+  
